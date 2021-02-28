@@ -16,7 +16,6 @@ foreach ($IP in $IPS)
         {
             Write-Host -ForegroundColor Green "DNS" $IP "is working fine. Connection  via port 53 is open."
         }
-
     else 
         {
             Write-Host -ForegroundColor red "DNS" $IP "is not workign properly"
