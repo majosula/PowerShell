@@ -12,7 +12,7 @@ foreach ($IP in $IPS)
     {
         $testConnection = Test-NetConnection $IP -Port 53 -InformationLevel Quiet
 
-        if ($testConnection -eq "True")
+     if ($testConnection -eq "True")
         {
             Write-Host -ForegroundColor Green "DNS" $IP "is working fine. Connection  via port 53 is open."
         }
